@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBNETEO</title>
+    <script src = 'logica.js'></script>
+</head>
+<body>
+    <br>
+    <label>ESCRIBRE AQUI LA IP PARA EL SUBNETEO</label>
+    <table>
+        <tr>
+            <td>
+                <input type = 'number' id = 'primeros3Numeros' minlength = '0' maxlength = '3' size = '3'>
+            </td>
+            <td>
+                <h1>.</h1>
+            </td>
+            <td>
+                <input type = 'number' id = 'segundos3Numeros' minlength = '0' maxlength = '3' size = '3'>
+            </td>
+            <td>
+                <h1>.</h1>
+            </td>
+            <td>
+                <input type = 'number' id = 'terceros3Numeros' minlength = '0' maxlength = '3' size = '3'>
+            </td>
+            <td>
+                <h1>.</h1>
+            </td>
+            <td>
+                <input type = 'number' id = 'cuartos3Numeros' minlength = '0' maxlength = '3' size = '3'>
+            </td>
+        </tr>
+        <tr>
+            <td colspan = "3" rowspan = "2">
+                <input value = 'CALCULAR MASCARA Y CLASE' type = 'button' onclick = "convertirTodos()">
+            </td>
+            <td colspan = "4">
+                <label>TIPO DE RED</label>
+                <input readonly = 'readonly' id = 'claseIp' type="text" width = 200px>
+            </td>
+        </tr>
+        <tr>
+            <td colspan = "4">
+                <label>MASCARA SUBRED</label>
+                <input readonly = 'readonly' id = 'mascaraSubred' type="text" width = 200px>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label>ESCRIBE AQUI EL NUMERO DE SUBREDES QUE NECESITAS</label>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td><input type = 'number' id = 'subredesNecesarias'></td>
+            <td colspan="2">
+                <label>HOST DISPONIBLE</label>
+                <input type="text" readonly = 'readonly' id = 'hostdisponbile'>
+            </td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>
+                <input value = 'CALCULAR' type = 'button' onclick = "obtenerNumeroDeHost()">
+            </td>
+            <td>
+                <label>VALOR DEL SALTO</label>
+                <input type="text" readonly = 'readonly' id = 'salto'>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
